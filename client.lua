@@ -6,7 +6,7 @@ Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
 
-        if IsControlPressed(0, 188) then
+        if IsControlPressed(0, 10) then
             isIdDisplaying = true
         else
             isIdDisplaying = false
@@ -36,7 +36,7 @@ end)
 function DrawPlayerId(x, y, z, id)
     local onScreen, _x, _y = World3dToScreen2d(x, y, z)
     if onScreen then
-        SetTextScale(0.35, 0.35)
+        SetTextScale(0.31, 0.31)
         SetTextFont(0)
         SetTextProportional(1)
         SetTextColour(255, 255, 255, 215)
